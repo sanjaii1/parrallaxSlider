@@ -2,7 +2,7 @@ import HomePage from "./pages/index"
 
 function App() {
   return (
-    <div style={{ backgroundColor: "black", height: "100vh", margin: 0 }}>
+    <div style={{ backgroundColor: "black" }}>
       <HomePage />
     </div>
   );
