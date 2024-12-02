@@ -1,0 +1,51 @@
+div {
+    scroll-snap-type: y mandatory;
+}
+
+.child {
+    scroll-snap-align: start;
+}
+
+.scroll-container {
+    scrollbar-width: none;
+ 
+    -ms-overflow-style: none;
+
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+   
+}
+
+.pills {
+    grid-column-gap: .75rem;
+    grid-row-gap: .75rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.pill-item {
+    color: white;
+    background-color: black;
+    border: 1px solid #00e5d1;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    min-height: 1.75rem;
+    padding: 1px;
+    font-size: .675rem;
+    line-height: 157.143%;
+    display: flex;
+    overflow: hidden;
+    padding:5px 10px;
+}
+
+.heading-style{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
