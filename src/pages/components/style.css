@@ -5,6 +5,7 @@ div {
 .child {
     scroll-snap-align: start;
 }
+
 .scroll-container {
     scrollbar-width: none; 
     -ms-overflow-style: none;
@@ -13,8 +14,8 @@ div {
     grid-auto-rows: auto;
     overflow-y: scroll;
     height: 70vh;
+    gap: 20px;
 }
-
 
 .scroll-container::-webkit-scrollbar {
     display: none;
@@ -52,12 +53,14 @@ div {
     font-weight: 500;
     line-height: 1.2;
 }
+
 .imageDiv {
     grid-column: 1 / 2;
     position: sticky;
     top: 0;
     text-align: center;
 }
+
 .rightBottomDiv {
     grid-column: 2 / 3;
     gap: 1.875rem; 
@@ -68,6 +71,7 @@ div {
     display: flex;
     margin-top: 10px;
 }
+
 .linktag {
     border-bottom: 1px solid white;
     display: flex;
@@ -77,3 +81,5 @@ div {
     gap: 10px;
     cursor: pointer;
 }
+
+
