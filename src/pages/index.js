@@ -6,7 +6,7 @@ import './style.css'
 
 const HomePage = () => {
   return (
-    <div className="homePageContainer">
+    <div className="homePageContainer container">
       <div className="homePageDiv">
         <Header />
         <Slider />

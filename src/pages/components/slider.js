@@ -21,6 +21,7 @@ export default function Slider() {
       heading: "Hacien",
       description:
         "HACIEN is a premium tequila brand supplying high-end hospitality and retail locations worldwide. They approached Phunk to undertake a comprehensive design project comprising web, packaging, and marketing assets as well as 3D renders of their signature bottles.",
+      link: "https://www.phunk.co.uk/work/hacien",
     },
     {
       image: Image2,
@@ -34,6 +35,8 @@ export default function Slider() {
       heading: "Mobilleo",
       description:
         "Mobilleo is a SaaS solution making it easy for organisations to manage global business travel for their employees.  The team at Mobilleo approached Phunk to provide a range of design and illustration services, building on their existing brand, for use across their website and app.",
+
+      link: "https://www.phunk.co.uk/work/mobillio",
     },
     {
       image: Image3,
@@ -46,6 +49,7 @@ export default function Slider() {
       heading: "Mannson Freight",
       description:
         "Mannson Freight operates import and export consolidation services involving sea freight. They engaged Phunk to rebrand their corporate identity and develop a new higher-performance website, as well as a custom-built portal — MFS Pro— including ongoing support.",
+      link: "https://www.phunk.co.uk/work/mannson-freight",
     },
     {
       image: Image4,
@@ -58,6 +62,7 @@ export default function Slider() {
       heading: "BOX iQ",
       description:
         "BOXiQ Performance Center in Dubai is a globally recognised boxing gym — hosting icons like Tyson Fury and Oleksandr Usyk. Working with Phunk, they now have a high-quality digital presence to match the prestige of their brand.",
+      link: "https://www.phunk.co.uk/work/box-iq",
     },
     {
       image: Image5,
@@ -70,47 +75,19 @@ export default function Slider() {
       heading: "The Honest Watch Dealer",
       description:
         "The Honest Watch Dealer is a luxury watch expert renowned for his popular YouTube channel, as well as founding The Luxury Watch Company. Charlie (his real name) engaged Phunk to develop a brand identity for his channel, with applications across a range of merchandise.",
+      link: "https://www.phunk.co.uk/work/honest-watch-dealer",
     },
   ];
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gridAutoRows: "auto",
-        overflowY: "scroll",
-        height: "80vh",
-        scrollbarWidth: "none",
-      }}
-      className="scroll-container container"
-    >
+    <div className="scroll-container container">
       {items.map((item, index) => (
         <React.Fragment key={index}>
-          <div
-            style={{
-              gridColumn: "1/2",
-              position: "sticky",
-              top: "0",
-              textAlign: "center",
-            }}
-          >
+          <div className="imageDiv">
             <img src={item.image} alt={`image ${index + 1}`} height="400px" />
           </div>
 
-          <div
-            style={{
-              gridColumn: "2/3",
-              gridColumnGap: "1.875rem",
-              gridRowGap: "1.875rem",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "flex-start",
-              height: "65vh",
-              display: "flex",
-              marginTop: "20px",
-            }}
-          >
+          <div className="rightBottomDiv">
             <div>
               <div className="pills">
                 {item.pills.map((pill, pillIndex) => (
@@ -128,25 +105,18 @@ export default function Slider() {
               </p>
             </div>
 
-            <a
-              style={{
-                borderBottom: "1px solid white",
-                display: "flex",
-                alignItems: "center",
-                textDecoration: "none",
-                color: "white",
-                gap: "10px", 
-              }}
-            >
-              <div style={{ color: "white", fontSize:'13px' }}>See full case study</div>
+            <a href={item.link} className="linktag">
+              <div style={{ color: "white", fontSize: "13px" }}>
+                See full case study
+              </div>
               <div>
                 <FontAwesomeIcon
                   icon={faArrowRight}
                   color="white"
                   style={{
-                    transform: "rotate(-45deg)", 
-                    transition: "transform 0.3s", 
-                    fontSize:'13px'
+                    transform: "rotate(-45deg)",
+                    transition: "transform 0.3s",
+                    fontSize: "13px",
                   }}
                 />
               </div>
